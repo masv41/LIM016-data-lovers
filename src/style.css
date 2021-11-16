@@ -1,0 +1,89 @@
+h1{
+  background: #FBF46D;
+  padding: 0%;
+  width: 100%;
+  height: 130px;
+  font-size: 48px;
+}
+body{
+  background: #77e4d4;
+
+ }
+.container {
+  margin: 0px;
+  background: #77e4d4;
+  padding: 0px;
+  width: 700px;
+  height: 450px;
+  position:fixed;
+  left:80px;
+  bottom: 30px;
+	overflow: hidden;
+  box-shadow: 0 0 5px 5px #FFFA8F;
+  border-radius: 10px;
+}
+
+ul li{
+  width: 100%;
+  list-style: none;
+}
+ul.slider{
+  display: flex;
+	padding: 0;
+  width: 700%;
+  height: 450px;
+
+	animation: slide 35s infinite alternate ease-in-out;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 100%;
+
+}
+@keyframes slide {
+	0% {margin-left: 0;}
+	10% {margin-left: 0;}
+
+	14% {margin-left: -100%;}
+	34% {margin-left: -100%;}
+
+	38% {margin-left: -200%;}
+	48% {margin-left: -200%;}
+
+	52% {margin-left: -300%;}
+	62% {margin-left: -300%;}
+
+  66% {margin-left: -400%;}
+	76% {margin-left: -400%;}
+
+  80% {margin-left: -500%;}
+	90% {margin-left: -500%;}
+
+  94% {margin-left: -600%;}
+	100% {margin-left: -600%;}
+}
+#imgTitle{
+  position: fixed;
+  right: 160px;
+  top: 170px;
+  border-radius: 10px;
+}
+.description{
+  background: #94B3FD;
+  margin: auto;
+  padding: 40px;
+  width: 500px;
+  height: 320px;
+  position:fixed;
+  right:40px;
+  bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #998CEB;
+}
+p{
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 0px;
+}
+
