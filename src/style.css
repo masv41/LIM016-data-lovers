@@ -4,19 +4,19 @@ h1{
   width: 100%;
   height: 130px;
   font-size: 48px;
+  right: 50px;
 }
 body{
   background: rgb(37, 37, 37);
  }
 .container {
-  margin: 10px;
+  margin: 100px;
   background: #77e4d4;
   padding: 0px;
   width: 700px;
   height: 450px;
-  position:fixed;
   left:80px;
-  bottom: 30px;
+  top: 130px;
 	overflow: hidden;
   box-shadow: 0 0 5px 5px #FCFFA6;
   border-radius: 10px;
@@ -64,11 +64,9 @@ ul.slider li img{
 	100% {margin-left: -600%;}
 }
 #imgTitle{
-  position: relative;
-  left:950px;
-  top: -75px;
   width: 450px;
   height: 200px;
+  position: 10% 0% 0% 20%;
 }
 .description{
   background: #B5DEFF;
@@ -76,16 +74,29 @@ ul.slider li img{
   padding: 40px;
   width: 500px;
   height: 320px;
-  position:fixed;
-  right:40px;
-  bottom: 30px;
+  right: 400px;
+  top: 30px;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px #998CEB;
 }
 p{
-  font-size: 22px;
+  font-size: 30px;
   text-align: justify;
   margin-top: 0px;
-  font-family: cursive;
+  font-family: 'Road Rage', cursive;
+}
+.character-container{
+  background: red;
+}
+.principal2{
+  background: rgb(121, 94, 240);
+  margin: 10px;
+  padding: 40px;
+  width: 90%;
+  height: 320px;
+  right:40px;
+  bottom: 30px;
+  border-radius: 10px;
+
 }
 
