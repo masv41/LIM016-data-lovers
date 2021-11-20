@@ -87,6 +87,9 @@ p{
 }
 .character-container{
   background: red;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 .principal2{
   background: rgb(121, 94, 240);
