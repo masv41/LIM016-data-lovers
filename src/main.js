@@ -1,30 +1,37 @@
 import data from "./data/rickandmorty/rickandmorty.js";
 
-console.log(data.results);
 let arrayData = [];
 arrayData = data.results;
-let personaje, foto, nombre, textoNombre;
+let personaje, foto, nombre, textoNombre, status, textoStatus;
 let pprincipales = document.getElementById("personajes");
-navegarData ();
+navegarData();
 
-function navegarData (){
+function navegarData() {
   arrayData.map(element => imprimirPersonajes(element));
 }
 
-function imprimirPersonajes (arrayData){
-  console.log("arreglo", arrayData);
-  console.log("id", pprincipales);
+function imprimirPersonajes(arrayData) {
   personaje = document.createElement("div");
   pprincipales.appendChild(personaje);
+
   foto = document.createElement("img");
   personaje.appendChild(foto);
   foto.src = arrayData.image;
+
   nombre = document.createElement("p");
   personaje.appendChild(nombre);
   textoNombre = document.createTextNode(arrayData.name);
   nombre.appendChild(textoNombre);
+  nombre.classList.add ("p.texto");
+
+  status = document.createElement("p");
+  personaje.appendChild(status);
+  textoStatus = document.createTextNode(arrayData.status);
+  status.appendChild(textoStatus);
+  status.classList.add ("p-status");
 
 }
+
 
 
 //console.log (data.results[i].image);
