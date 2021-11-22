@@ -15,9 +15,16 @@ body{
   font-family: 'Indie Flower', cursive;
   font-size: 25px;
 }
-ul, li{
+.nav li a{
   list-style: none;
   color: white;
+  background-color: #6166B3;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+}
+.nav li a :hover{
+  background-color:#17D7A0;
 }
 .container {
   margin: 100px;
@@ -101,7 +108,7 @@ p{
 }
 .principal2{
   background: rgb(121, 94, 240);
-  margin: 25% 3% 10% 3%;
+  margin: 20% 3% 10% 3%;
   width: 90%;
   height: auto;
   border-radius: 10px;
@@ -116,11 +123,21 @@ h2{
   background: red;
   display: flex;
   flex-wrap: wrap;
-  margin: 3%;
+
   padding: 10px;
 }
 .p-status, .p-texto{
   border: 1px solid white;
+  width: 60%;
+  text-align: center;
 }
-
+.p-imagen{
+  width: 60%;
+  height: 50%;
+  border-radius: 10px;
+}
+#fb, #ins, #yt{
+ width: 5%;
+ height: 5%;
+}
 
