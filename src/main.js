@@ -2,19 +2,54 @@ import data from "./data/rickandmorty/rickandmorty.js";
 
 let arrayData = [];
 arrayData = data.results;
-let personaje, foto, nombre, textoNombre, status, textoStatus;
 let pprincipales = document.getElementById("personajes");
-let pantallaPrincipal = document.getElementById("pantallaPrincipal");
 navegarData();
 
 
+
 function navegarData() {
-  arrayData.map(element => imprimirPersonajes(element));
+ let perfiles=''
+  arrayData.forEach(function(element){
+     perfiles+=
+    `<div class= "cont-personajes">
+      <div class= "card">
+        <img src=${element.image}></img>
+      </div>
+      <div class="info">
+        <ul>
+          <p><b>Nombre:<b> ${element.name}</p>
+          <p><b>Estado:<b> ${element.status}</p>
+          <p><b>Especie:<b> ${element.specie}</p>
+          <p><b>Genero:<b> ${element.gender}</p>
+          <p><b>Origen:<b> ${element.origin.name}</p>
+        </ul>
+      </div>
+    </div>`
+  })
+  return perfiles
+}
+
+
+let formatoPersonajes = navegarData(pprincipales)
+document.getElementById("perfiles").innerHTML=formatoPersonajes
+
+
+verTodo.addEventListener('clik', showAll);
+function showAll() {
+  arrayData;
+}
+
+
+/*
+let personaje, foto, nombre, textoNombre, status, textoStatus;
+function navegarData() {
+  arrayData.forEach(element => imprimirPersonajes(element));
 }
 
 function imprimirPersonajes(arrayData) {
   personaje = document.createElement("div");
   pprincipales.appendChild(personaje);
+  pprincipales.classList.add("p-personaje");
 
   foto = document.createElement("img");
   personaje.appendChild(foto);
@@ -32,9 +67,6 @@ function imprimirPersonajes(arrayData) {
   textoStatus = document.createTextNode(arrayData.status);
   status.appendChild(textoStatus);
   status.classList.add("p-status");
-}
-if (pantallaPrincipal !== true){
-
 }
 
 

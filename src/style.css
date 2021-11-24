@@ -9,22 +9,24 @@ h1{
 body{
   background: rgb(37, 37, 37);
  }
-#navegador{
-  margin:auto;
-  width: 200px;
-  font-family: 'Indie Flower', cursive;
-  font-size: 25px;
-}
-.nav li a{
-  list-style: none;
-  color: white;
-  background-color: #6166B3;
-  text-decoration: none;
+.select{
   display: block;
-  padding: 10px 15px;
+  background-color: blue;
+  width: 10%;
+  font-size: 25px;
+  font-family: sans-serif;
+  border-radius: 3px;
+  appearance: none;
+  position: relative;
+  top: 80%;
+
 }
-.nav li a :hover{
-  background-color:#17D7A0;
+.select:hover{
+  background: turquoise;
+}
+.select:focus{
+  box-shadow: 0px 0px 3px 1px yellow;
+
 }
 .container {
   margin: 100px;
@@ -108,7 +110,7 @@ p{
 }
 .principal2{
   background: rgb(121, 94, 240);
-  margin: 20% 3% 10% 3%;
+  margin: 35% 3% 10% 3%;
   width: 90%;
   height: auto;
   border-radius: 10px;
@@ -116,15 +118,22 @@ p{
 h2{
   font-family: 'Shadows Into Light', cursive;
   font-size: 40px;
-  text-align: centerf;
+  text-align: center;
 
 }
 .character-container{
   background: red;
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
 
   padding: 10px;
+}
+.p-personajes{
+  padding: 10px;
+  background: white;
+
+
 }
 .p-status, .p-texto{
   border: 1px solid white;

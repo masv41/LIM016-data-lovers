@@ -11,26 +11,37 @@
   <body>
     <section id="pantallaPrincipal">
     <h1>Addicted to <br> [Adult Swim]</h1>
+
     <div id="navegador">
-      <ul class="nav">
-        <li><a href="">Personajes</a>
-          <ul>
-            <li><a href="">Status</a></li>
-            <li><a href="">Especie</a></li>
-            <li><a href="">Género</a></li>
-          </ul>
-        </li>
-        <li><a href="">Lugar de Origen</a>
-          <ul>
-            <li><a href="">Tierra</a></li>
-            <li><a href="">Otro</a></li>
-          </ul>
+      <ul class="barNav">
+
+        <li id="verTodo" class="select">Ver Todo</a></li>
+
+        <li>
+          <select id="characterSelect" class="select">
+            <option value=""disable selected>Personajes</option>
+            <option value="status">Status</option>
+            <option value="gender">Genero</option>
+            <option value="specie">Especie</option>
+          </select>
         </li>
 
-        <li><a href="">Episodios</a></li>
+        <li>
+          <select id="location" class="select">
+            <option value=""disable selected>Lugar de Origen</option>
+            <option value="earth">Tierra</option>
+            <option value="other">Otros</option>
+          </select>
+        </li>
+
+        <li>
+          <select id="episode" class="select">
+            <option value=""disable selected>Episodios</option>
+          </select>
+        </li>
       </ul>
-
     </div>
+
     <section class="principal">
       <div class="container">
         <ul class="slider">
@@ -69,7 +80,7 @@
       <div class="character-container" id="personajes">
 
       </div>
-      </section>
+    </section>
       <footer>
         <div class="networks">
           <a href="https://web.facebook.com/RickandMorty/">
