@@ -1,4 +1,6 @@
 import data from "./data/rickandmorty/rickandmorty.js";
+import { filterGender } from './data.js';
+
 
 let arrayData = [];
 arrayData = data.results;
@@ -10,7 +12,7 @@ navegarData();
 function navegarData() {
  let perfiles=''
   arrayData.forEach(function(element){
-     perfiles+=
+    perfiles+=
     `<div class= "cont-personajes">
       <div class= "card">
         <img src=${element.image}></img>
@@ -26,54 +28,47 @@ function navegarData() {
       </div>
     </div>`
   })
-  return perfiles
+  pprincipales.innerHTML = perfiles; //imprimir en pprincipales(personajes de HTML)la data de perfiles
 }
 
+/*let getResults = document.getElementById("applyFilters")
+getResults.addEventListener('click',() =>{
+  let genderChoice = document.getElementById("gender").value
+  let speciesChoice = document.getElementById("species").value
+  let statusChoice = document.getElementById("status").value
+  let filterResults = func.filterData(person, genderChoice, speciesChoice, statusChoice)
+  let numberResults = filterResults.length
+  document.getElementById("numberOfResults").innerHTML = numberResults + " resultados"
+  let orderChoice = document.getElementById("alphabet").value
+  let orderedResults = func.sortData(filterResults, orderChoice)
+  let renderedData = navegarData(orderedResults)
+  document.getElementById("perfiles").innerHTML=renderedData
+ })
 
-let formatoPersonajes = navegarData(pprincipales)
-document.getElementById("perfiles").innerHTML=formatoPersonajes
 
 
-verTodo.addEventListener('clik', showAll);
+
+/*verTodo.addEventListener('clik', showAll);
 function showAll() {
-  arrayData;
+  showAll (arrayData);
+}
+document.addEventListener('click', (e) =>){
+
 }
 
-
-/*
-let personaje, foto, nombre, textoNombre, status, textoStatus;
-function navegarData() {
-  arrayData.forEach(element => imprimirPersonajes(element));
-}
-
-function imprimirPersonajes(arrayData) {
-  personaje = document.createElement("div");
-  pprincipales.appendChild(personaje);
-  pprincipales.classList.add("p-personaje");
-
-  foto = document.createElement("img");
-  personaje.appendChild(foto);
-  foto.src = arrayData.image;
-  foto.classList.add("p-imagen");
-
-  nombre = document.createElement("p");
-  personaje.appendChild(nombre);
-  textoNombre = document.createTextNode(arrayData.name);
-  nombre.appendChild(textoNombre);
-  nombre.classList.add("p-texto");
-
-  status = document.createElement("p");
-  personaje.appendChild(status);
-  textoStatus = document.createTextNode(arrayData.status);
-  status.appendChild(textoStatus);
-  status.classList.add("p-status");
-}
-
-
-
-
-//console.log (data.results[i].image);
-
-//let foto = document.getElementById("personaje1");
-
-//foto.src = data.results[0].image;
+function filtrarGenero(seleccion, arrayData){
+  let filterGender;
+switch (seleccion) {
+  case 'male':
+    filterGender= filterGender(arrayData,'male');
+    break;
+  case 'female':
+    filterGender= filterGender(arrayData,'female');
+    break;
+  case 'unknown':
+    filterGender= filterGender(arrayData,'unknown');
+    break;
+  default:
+    console.log('default');
+  }
+}*/

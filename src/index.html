@@ -6,41 +6,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section id="pantallaPrincipal">
+
     <h1>Addicted to <br> [Adult Swim]</h1>
-
-    <div id="navegador">
-      <ul class="barNav">
-
-        <li id="verTodo" class="select">Ver Todo</a></li>
-
-        <li>
-          <select id="characterSelect" class="select">
-            <option value=""disable selected>Personajes</option>
-            <option value="status">Status</option>
-            <option value="gender">Genero</option>
-            <option value="specie">Especie</option>
-          </select>
-        </li>
-
-        <li>
-          <select id="location" class="select">
-            <option value=""disable selected>Lugar de Origen</option>
-            <option value="earth">Tierra</option>
-            <option value="other">Otros</option>
-          </select>
-        </li>
-
-        <li>
-          <select id="episode" class="select">
-            <option value=""disable selected>Episodios</option>
-          </select>
-        </li>
-      </ul>
-    </div>
 
     <section class="principal">
       <div class="container">
@@ -76,6 +48,48 @@
       </div>
     </section>
     <section class="principal2">
+      <section class="menu">
+        <div class="divFilter" id="filter">
+           <label class="labFieldset">Filtrar por:</label>
+           <select name="genero" id="gender" class="divGender">
+             <option value="none">Género</option>
+             <option value="Female">Mujer</option>
+             <option value="Male">Hombre</option>
+             <option value="Genderless">Sin género</option>
+             <option value="unknown">Desconocido</option>
+           </select>
+           <select name="especie" id="species" class="divSpecies">
+             <option value="none">Especie</option>
+             <option value="Human">Humano</option>
+             <option value="Alien">Alien</option>
+             <option value="Humanoid">Humanoide</option>
+             <option value="Robot">Robot</option>
+             <option value="Disease">Enfermedad</option>
+             <option value="Parasite">Parásito</option>
+             <option value="Poopybutthole">Poopybutthole</option>
+             <option value="Mytholog">Mytholog</option>
+             <option value="Animal">Animal</option>
+             <option value="Vampire">Vampiro</option>
+             <option value="Cronenberg">Cronenberg</option>
+             <option value="unknown">Desconocido</option>
+           </select>
+           <select name="estado" id="status" class="divStatus">
+             <option value="none">Estado</option>
+             <option value="Alive">Vivo</option>
+             <option value="Dead">Muerto</option>
+             <option value="unknown">Desconocido</option>
+           </select>
+           <label class="labFieldset">Ordenar por:</label>
+           <select name="ordenar" id="alphabet" class="divAlphabet">
+             <option value="none">Relevancia</option>
+             <option value="ascend">A-Z</option>
+             <option value="descend">Z-A</option>
+           </select>
+           <button id="applyFilters">Aplicar</button>
+           <button id="clean">Limpiar datos</button>
+           <p id="numberOfResults"></p>
+        </div>
+     </section>
       <h2>Personajes</h2>
       <div class="character-container" id="personajes">
 
