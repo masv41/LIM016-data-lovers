@@ -151,7 +151,10 @@ h2{
 }
 
 #fb, #ins, #yt{
- width: 5%;
+ width: 3%;
  height: 5%;
+}
+#fb{
+  margin-left: 10%;
 }
 
