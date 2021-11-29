@@ -1,6 +1,18 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { filterDataByGender, sortAZData, sortZAData } from "./data.js";
 
-console.log(example, data);
+
+
+function filtradoPorOrden(seleccion, localData) {
+    let filtrarOrden;
+    switch (seleccion) {
+        case 'az':
+            filtrarOrden = sortAZData(localData, 'name');
+            break;
+        case 'za':
+            filtrarOrden = sortZAData(localData, 'name');
+            break;
+        default:
+            break;
+    }
+    return (filtrarOrden)
+   }

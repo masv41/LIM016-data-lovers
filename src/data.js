@@ -1,9 +1,32 @@
-// estas funciones son de ejemplo
+export const filterDataBySpecies = (data, value) => data.filter(person => person.species === value);
+export const filterDataByStatus = (data, value) => data.filter(person => person.status === value);
+export const filterDataByType = (data, value) => data.filter(person => person.type === value);
+export const filterDataByOrigin = (data, value) => data.filter(person => person.origin.name === value);
+export const filterDataByLocation = (data, value) => data.filter(person => person.location.name === value);
 
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return 'OMG';
-};
+export const sortAZData = (data) => {
+    return data.results.sort((a, b) => {
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+    if (nameA < nameB){
+      return -1
+    }
+    if (nameA > nameB) {
+      return 1
+    }
+  });
+  }
+  
+  export const sortZAData = (data) => {
+    return data.results.sort((a, b) => {
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
+    if (nameA < nameB){
+      return 1
+    }
+    if (nameA > nameB) {
+      return -1
+    }
+  });
+  }
+  
