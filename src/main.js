@@ -1,5 +1,6 @@
 import { filterDataByGender } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
+import { filterDataByGender, sortAZData, sortZAData } from "./data.js";
 //import { filterData, example} from './data.js';
 
 
@@ -64,4 +65,17 @@ let filterStatus = filterDataByStatus(arrayData, (e.target.value));
 
 })*/
 
-
+function filtradoPorOrden(seleccion, localData) {
+    let filtrarOrden;
+    switch (seleccion) {
+        case 'az':
+            filtrarOrden = sortAZData(localData, 'name');
+            break;
+        case 'za':
+            filtrarOrden = sortZAData(localData, 'name');
+            break;
+        default:
+            break;
+    }
+    return (filtrarOrden)
+   }

@@ -79,6 +79,17 @@
              <option value="Dead">Muerto</option>
              <option value="unknown">Desconocido</option>
            </select>
+           <select name="Temporadas y episodios" id="season" class="divSeason">
+             <option value="seasonOne">Temporada 1</option>
+              <option value="seasonTwo">Temporada 2</option>
+              <option value="seasonThree">Temporada 3</option>
+            </select>
+           <select class="select" id="ordenarSeleccion">
+             <option value="" disabled selected>Sort</option>
+             <option value="az">A-Z</option>
+             <option value="za">Z-A</option>
+            </select>
+
            <label class="labFieldset">Ordenar por:</label>
            <select name="ordenar" id="alphabet" class="divAlphabet">
              <option value="none">Relevancia</option>
@@ -109,6 +120,3 @@
       </footer>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
-    </section>
-  </body>
-</html>
