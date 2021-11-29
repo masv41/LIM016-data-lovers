@@ -25,6 +25,7 @@ function printData(data) {
           <p><b>Especie:<b> ${element.species}</p>
           <p><b>Genero:<b> ${element.gender}</p>
           <p><b>Origen:<b> ${element.origin.name}</p>
+          <p><b>Locación:<b> ${element.location.name}</p>
         </ul>
       </div>
     </div>`

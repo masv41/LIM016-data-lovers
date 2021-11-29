@@ -7,13 +7,18 @@ h1{
   right: 50px;
 }
 body{
+  width: 100%;
   background: rgb(37, 37, 37);
+  flex-wrap: wrap;
  }
-
+.principal{
+  flex-wrap: wrap;
+}
 .container {
   margin: 100px;
   background: #77e4d4;
   padding: 0px;
+  max-width: 50%;
   width: 700px;
   height: 450px;
   position: absolute;
@@ -76,11 +81,12 @@ ul.slider li img{
   background: #B5DEFF;
   margin: auto;
   padding: 40px;
+  max-width: 50%;
   width: 500px;
   height: 320px;
   position: absolute;
   right: 4%;
-  top: 43%;
+  top: 44%;
   border-radius: 10px;
   box-shadow: 0 0 5px 5px #998CEB;
 }
@@ -157,4 +163,15 @@ h2{
 #fb{
   margin-left: 10%;
 }
+/* ******* Responsive ******* */
+@media screen and (max-width: 800px){
+  .container{
+    max-width: 100%;
+  }
+  .description {
+    max-width: 100%;
+  }
+
+
+};
 
