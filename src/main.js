@@ -16,17 +16,20 @@ function printData(data) {
   data.forEach(function(element){
     profiles+=
     `<div class= "cont-personajes">
+      <div class="name">
+        <ul>
+          <p> ${element.name}</p>
+        </ul>
+      </div>
       <div class= "card">
         <img src=${element.image}></img>
       </div>
       <div class="info">
         <ul>
-          <p><b>Nombre:<b> ${element.name}</p>
           <p><b>Estado:<b> ${element.status}</p>
           <p><b>Especie:<b> ${element.species}</p>
           <p><b>Genero:<b> ${element.gender}</p>
           <p><b>Origen:<b> ${element.origin.name}</p>
-          <p><b>Locación:<b> ${element.location.name}</p>
         </ul>
       </div>
     </div>`

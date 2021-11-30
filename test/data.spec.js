@@ -1,9 +1,10 @@
-import { example, anotherExample } from '../src/data.js';
+import { filterDataByGender, anotherExample } from '../src/data.js';
 
 
-describe('example', () => {
+describe('filterByGender', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof filterDataByGender).toBe('function');
+
   });
 
   it('returns `example`', () => {
