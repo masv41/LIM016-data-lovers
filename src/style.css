@@ -1,0 +1,177 @@
+h1{
+  background: #D1D94B;
+  padding: 0%;
+  width: 100%;
+  height: 130px;
+  font-size: 48px;
+  right: 50px;
+}
+body{
+  width: 100%;
+  background: rgb(37, 37, 37);
+  flex-wrap: wrap;
+ }
+.principal{
+  flex-wrap: wrap;
+}
+.container {
+  margin: 100px;
+  background: #77e4d4;
+  padding: 0px;
+  max-width: 50%;
+  width: 700px;
+  height: 450px;
+  position: absolute;
+  left:0%;
+  top: 25%;
+	overflow: hidden;
+  box-shadow: 0 0 5px 5px #FCFFA6;
+  border-radius: 10px;
+}
+
+ul li{
+  width: 100%;
+  list-style: none;
+}
+ul.slider{
+  display: flex;
+	padding: 0;
+  width: 700%;
+  height: 450px;
+  margin-top: 0px;
+
+	animation: slide 35s infinite alternate ease-in-out;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 100%;
+
+}
+@keyframes slide {
+	0% {margin-left: 0;}
+	10% {margin-left: 0;}
+
+	14% {margin-left: -100%;}
+	34% {margin-left: -100%;}
+
+	38% {margin-left: -200%;}
+	48% {margin-left: -200%;}
+
+	52% {margin-left: -300%;}
+	62% {margin-left: -300%;}
+
+  66% {margin-left: -400%;}
+	76% {margin-left: -400%;}
+
+  80% {margin-left: -500%;}
+	90% {margin-left: -500%;}
+
+  94% {margin-left: -600%;}
+	100% {margin-left: -600%;}
+}
+#imgTitle{
+  width: 450px;
+  height: 200px;
+  position: absolute;
+  right: 8%;
+  top: 17%;
+}
+.description{
+  background: #B5DEFF;
+  margin: auto;
+  padding: 40px;
+  max-width: 50%;
+  width: 500px;
+  height: 320px;
+  position: absolute;
+  right: 4%;
+  top: 44%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #998CEB;
+}
+p{
+  font-size: 30px;
+  text-align: justify;
+  margin-top: 0px;
+  font-family: 'Road Rage', cursive;
+}
+.principal2{
+  background: url(images/FondoRM.png);
+  background-size: 100%;
+  margin: 45% 3% 10% 3%;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+h2{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+.menu select, label, button{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  margin: 2% 0% 0%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu label{
+  background: #FBF46D;
+  padding: 10px;
+}
+.menu button{
+  background: rgb(163, 162, 162);
+}
+.menu select:hover{
+  background: #77E4D4;
+}
+.character-container{
+  background:none ;
+  margin: -4% 0% 0% 0%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  position: center;
+}
+
+.cont-personajes{
+  width: 18%;
+  margin: 5% 0% 1% 4%;
+  padding: 10px;
+  background: white;
+  position: center;
+  border-radius: 10px;
+}
+.card img{
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+  margin:5% 5% 5% 10%;
+}
+.info p{
+  margin: 1% 0% 1% -10%;
+  text-align:left;
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
+}
+
+#fb, #ins, #yt{
+ width: 3%;
+ height: 5%;
+}
+#fb{
+  margin-left: 10%;
+}
+/* ******* Responsive ******* */
+@media screen and (max-width: 800px){
+  .container{
+    max-width: 100%;
+  }
+  .description {
+    max-width: 100%;
+  }
+
+
+};
+
