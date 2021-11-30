@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="pantallaPrincipal">
 
     <h1>Addicted to <br> [Adult Swim]</h1>
 
@@ -79,13 +78,14 @@
              <option value="Dead">Muerto</option>
              <option value="unknown">Desconocido</option>
            </select>
-           <select name="Temporadas y episodios" id="season" class="divSeason">
-             <option value="seasonOne">Temporada 1</option>
-              <option value="seasonTwo">Temporada 2</option>
-              <option value="seasonThree">Temporada 3</option>
+           <select name="season and episodes" id="season" class="divSeason">
+              <option value="none">Episodios</option>
+              <option value="seasonOne">Episodio 1</option>
+              <option value="seasonTwo">Episodio 2</option>
+              <option value="seasonThree">Episodio 3</option>
             </select>
            <select class="select" id="ordenarSeleccion">
-             <option value="" disabled selected>Sort</option>
+             <option value="" disabled selected>Clasificar</option>
              <option value="az">A-Z</option>
              <option value="za">Z-A</option>
             </select>
@@ -118,5 +118,7 @@
           </a>
         </div>
       </footer>
+    </body>
     <div id="root"></div>
     <script src="main.js" type="module"></script>
+</html>

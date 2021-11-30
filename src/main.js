@@ -1,6 +1,5 @@
-import { filterDataByGender } from "./data.js";
 import data from "./data/rickandmorty/rickandmorty.js";
-import { filterDataByGender, sortAZData, sortZAData } from "./data.js";
+import { filterDataByGender, filterDataBySpecies,filterDataByStatus, sortAZData, sortZAData } from "./data.js";
 //import { filterData, example} from './data.js';
 
 
@@ -8,6 +7,7 @@ let arrayData = [];
 arrayData = data.results;
 let mainCharacters = document.getElementById("characters");
 printData(arrayData);
+SortBy(data);
 
 
 // tample string para poder dar estilo en CSS
@@ -50,22 +50,20 @@ let filterGender = filterDataByGender(arrayData, (e.target.value));
   printData(filterGender);
 })
 
-/*let specieChoice = document.getElementById("species")
+let specieChoice = document.getElementById("species")
 specieChoice.addEventListener('change',(e) =>{
-  console.log(e.target.value);
-let filterSpecie = filterDataBySpecie(arrayData, (e.target.value));
-  console.log(filterStatus);
+let filterSpecie = filterDataBySpecies(arrayData, (e.target.value));
+
+printData(filterSpecie);
     })
 
 let statusChoice = document.getElementById("status")
 statusChoice.addEventListener('change',(e) =>{
-  console.log(e.target.value);
 let filterStatus = filterDataByStatus(arrayData, (e.target.value));
-  //console.log(filterStatus);
+  printData(filterStatus);
+})
 
-})*/
-
-function filtradoPorOrden(seleccion, localData) {
+function SortBy(seleccion, localData) {
     let filtrarOrden;
     switch (seleccion) {
         case 'az':
