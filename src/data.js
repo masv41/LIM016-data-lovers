@@ -29,4 +29,33 @@ export const sortAZData = (data) => {
     }
   });
   }
+
+  const multipleFilter={
+    filterData:function(list, choice1, choice2, choice3){
+      let resultFilterGen=list.filter((person)=>{
+        if(person.gender===choice1){
+          return true
+        }else{
+          if(choice1==="none")
+          return list
+        }
+      })
+      let resultFilterSpecies=resultFilterGen.filter((person)=>{
+        if(person.species===choice2){
+          return true
+        }else{
+          if(choice2==="none")
+          return resultGen
+        }
+      })
+      let finalResult=resultFilterSpecies.filter((person)=>{
+        if(person.status===choice3){
+          return true
+        }else{
+          if(choice3==="none")
+          return resultFilterSpecies
+        }
+      })
+      return finalResult
+    },
   
