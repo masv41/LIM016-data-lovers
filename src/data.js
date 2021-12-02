@@ -9,8 +9,7 @@ export const filterDataByType = (data, value) => data.filter(person => person.ty
 export const filterDataByOrigin = (data, value) => data.filter(person => person.origin.name === value);
 export const filterDataByLocation = (data, value) => data.filter(person => person.location.name === value);
 
-export const sortAZData = (data) => {
-    return data.results.sort((a, b) => {
+export const sortAZData = (data) => {data.results.sort((a, b) => {
     const nameA = a.name.toLowerCase();
     const nameB = b.name.toLowerCase();
     if (nameA < nameB){
@@ -21,7 +20,7 @@ export const sortAZData = (data) => {
     }
   });
   }
-  
+
   export const sortZAData = (data) => {
     return data.results.sort((a, b) => {
     const nameA = a.name.toLowerCase();
@@ -34,5 +33,5 @@ export const sortAZData = (data) => {
     }
   });
   }
-  
+
 

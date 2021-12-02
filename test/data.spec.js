@@ -85,3 +85,15 @@ describe('filterByGender', () => {
     expect(filterDataByGender(data, "Male")).toStrictEqual(result1);
   });
 });
+
+const result2 = [data[2]]
+describe('filterByGender', () => {
+  it('is a function', () => {
+    expect(typeof filterDataByGender).toBe('function');
+
+  });
+
+  it('returns `example`', () => {
+    expect(filterDataByGender(data, "Female")).toStrictEqual(result2);
+  });
+});

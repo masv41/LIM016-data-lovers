@@ -17,90 +17,55 @@
   <div class="logo">
     <img id="logo" src="images/LogoHeadRM.png" alt="">
   </div>
-  <section class="menu">
-    <div class="divFilter" id="filter">
-      <label class="labFieldset">Filtrar por:</label>
-      <select name="genero" id="gender" class="divGender">
-        <option value="none">Género</option>
-        <option value="Female">Mujer</option>
-        <option value="Male">Hombre</option>
-        <option value="Genderless">Sin género</option>
-        <option value="unknown">Desconocido</option>
-      </select>
-      <select name="especie" id="species" class="divSpecies">
-        <option value="none">Especie</option>
-        <option value="Human">Humano</option>
-        <option value="Alien">Alien</option>
-        <option value="Humanoid">Humanoide</option>
-        <option value="Robot">Robot</option>
-        <option value="Disease">Enfermedad</option>
-        <option value="Parasite">Parásito</option>
-        <option value="Poopybutthole">Poopybutthole</option>
-        <option value="Mytholog">Mytholog</option>
-        <option value="Animal">Animal</option>
-        <option value="Vampire">Vampiro</option>
-        <option value="Cronenberg">Cronenberg</option>
-        <option value="unknown">Desconocido</option>
-      </select>
-      <select name="estado" id="status" class="divStatus">
-        <option value="none">Estado</option>
-        <option value="Alive">Vivo</option>
-        <option value="Dead">Muerto</option>
-        <option value="unknown">Desconocido</option>
-      </select>
+  <section class="menu1">
+    <div class="divView" id="newView">
       <select name="season and episodes" id="season" class="divSeason">
-        <option value="none">Episodios</option>
-        <option value="seasonOne">Episodio 1</option>
-        <option value="seasonTwo">Episodio 2</option>
-        <option value="seasonThree">Episodio 3</option>
+        <option value="none">Temporadas</option>
+        <option value="seasonOne">Temporada 1</option>
+        <option value="seasonTwo">Temporada 2</option>
+        <option value="seasonThree">Temporada 3</option>
       </select>
-      <label class="labFieldset">Ordenar por:</label>
-      <select name="ordenar" id="alphabet" class="divAlphabet">
-        <option value="none">Relevancia</option>
-        <option value="ascend">A-Z</option>
-        <option value="descend">Z-A</option>
-      </select>
-      <a href="filters.html"><button id="applyFilters">Aplicar</button></a>
-      <button id="clean">Limpiar datos</button>
+      <a href="filters.html"><button id="filterCharacters">Personajes</button></a>
       <a href="grafics.html"><button id="Statistics">Estadisticas</button></a>
     </div>
-  </section>
-  <section class="principal">
-    <div class="container">
-      <ul class="slider">
-        <li id="slider1">
-          <img src="images/slider1.png" alt="">
-        </li>
-        <li id="slider2">
-          <img src="images/slider2.jpg" alt="">
-        </li>
-        <li id="slider3">
-          <img src="images/slider3.jpg" alt="">
-        </li>
-        <li id="slider4">
-          <img src="images/slider4.jpg" alt="">
-        </li>
-        <li id="slider5">
-          <img src="images/slider5.jpg" alt="">
-        </li>
-        <li id="slider6">
-          <img src="images/slider6.jpg" alt="">
-        </li>
-        <li id="slider7">
-          <img src="images/slider7.jpg" alt="">
-        </li>
-      </ul>
-    </div>
-    <div class="img">
-      <img id="imgTitle" src="images/Titulo R&M2.png" alt="">
-    </div>
-    <div class="description">
-      <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico,
-        egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su
-        hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy listo.
-        Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del Cosmos y Universos
-        paralelos.</p>
-    </div>
+    <section class="principal">
+      <div class="container">
+        <ul class="slider">
+          <li id="slider1">
+            <img src="images/slider1.png" alt="">
+          </li>
+          <li id="slider2">
+            <img src="images/slider2.jpg" alt="">
+          </li>
+          <li id="slider3">
+            <img src="images/slider3.jpg" alt="">
+          </li>
+          <li id="slider4">
+            <img src="images/slider4.jpg" alt="">
+          </li>
+          <li id="slider5">
+            <img src="images/slider5.jpg" alt="">
+          </li>
+          <li id="slider6">
+            <img src="images/slider6.jpg" alt="">
+          </li>
+          <li id="slider7">
+            <img src="images/slider7.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div class="img">
+        <img id="imgTitle" src="images/Titulo R&M2.png" alt="">
+      </div>
+      <div class="description">
+        <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico,
+          egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su
+          hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy
+          listo.
+          Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del Cosmos y Universos
+          paralelos.</p>
+      </div>
+    </section>
   </section>
 </body>
 <footer>
@@ -116,6 +81,7 @@
     </a>
   </div>
 </footer>
+
 <div id="root"></div>
 <script src="main.js" type="module"></script>
 
