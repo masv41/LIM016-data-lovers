@@ -63,6 +63,7 @@ printData(filterSpecie);
 let statusChoice = document.getElementById("status")
 statusChoice.addEventListener('change',(e) =>{
 let filterStatus = filterDataByStatus(arrayData, (e.target.value));
+
   printData(filterStatus);
 })
 

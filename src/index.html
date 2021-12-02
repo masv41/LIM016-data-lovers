@@ -1,123 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,inicial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.js"></script>
 
-    <title>Addicted to [Adult Swim] </title>
-    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="logo">
-      <img id="logo" src="images/LogoHeadRM.png" alt="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,inicial-scale=1.0">
+
+  <title>Addicted to [Adult Swim] </title>
+  <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="logo">
+    <img id="logo" src="images/LogoHeadRM.png" alt="">
+  </div>
+  <section class="menu">
+    <div class="divFilter" id="filter">
+      <label class="labFieldset">Filtrar por:</label>
+      <select name="genero" id="gender" class="divGender">
+        <option value="none">Género</option>
+        <option value="Female">Mujer</option>
+        <option value="Male">Hombre</option>
+        <option value="Genderless">Sin género</option>
+        <option value="unknown">Desconocido</option>
+      </select>
+      <select name="especie" id="species" class="divSpecies">
+        <option value="none">Especie</option>
+        <option value="Human">Humano</option>
+        <option value="Alien">Alien</option>
+        <option value="Humanoid">Humanoide</option>
+        <option value="Robot">Robot</option>
+        <option value="Disease">Enfermedad</option>
+        <option value="Parasite">Parásito</option>
+        <option value="Poopybutthole">Poopybutthole</option>
+        <option value="Mytholog">Mytholog</option>
+        <option value="Animal">Animal</option>
+        <option value="Vampire">Vampiro</option>
+        <option value="Cronenberg">Cronenberg</option>
+        <option value="unknown">Desconocido</option>
+      </select>
+      <select name="estado" id="status" class="divStatus">
+        <option value="none">Estado</option>
+        <option value="Alive">Vivo</option>
+        <option value="Dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
+      </select>
+      <select name="season and episodes" id="season" class="divSeason">
+        <option value="none">Episodios</option>
+        <option value="seasonOne">Episodio 1</option>
+        <option value="seasonTwo">Episodio 2</option>
+        <option value="seasonThree">Episodio 3</option>
+      </select>
+      <label class="labFieldset">Ordenar por:</label>
+      <select name="ordenar" id="alphabet" class="divAlphabet">
+        <option value="none">Relevancia</option>
+        <option value="ascend">A-Z</option>
+        <option value="descend">Z-A</option>
+      </select>
+      <a href="filters.html"><button id="applyFilters">Aplicar</button></a>
+      <button id="clean">Limpiar datos</button>
+      <a href="grafics.html"><button id="Statistics">Estadisticas</button></a>
     </div>
+  </section>
+  <section class="principal">
+    <div class="container">
+      <ul class="slider">
+        <li id="slider1">
+          <img src="images/slider1.png" alt="">
+        </li>
+        <li id="slider2">
+          <img src="images/slider2.jpg" alt="">
+        </li>
+        <li id="slider3">
+          <img src="images/slider3.jpg" alt="">
+        </li>
+        <li id="slider4">
+          <img src="images/slider4.jpg" alt="">
+        </li>
+        <li id="slider5">
+          <img src="images/slider5.jpg" alt="">
+        </li>
+        <li id="slider6">
+          <img src="images/slider6.jpg" alt="">
+        </li>
+        <li id="slider7">
+          <img src="images/slider7.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+    <div class="img">
+      <img id="imgTitle" src="images/Titulo R&M2.png" alt="">
+    </div>
+    <div class="description">
+      <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico,
+        egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su
+        hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy listo.
+        Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del Cosmos y Universos
+        paralelos.</p>
+    </div>
+  </section>
+</body>
+<footer>
+  <div class="networks">
+    <a href="https://web.facebook.com/RickandMorty/">
+      <img src="images/FB.png" id="fb" alt="logo facebook">
+    </a>
+    <a href="https://www.instagram.com/rickandmorty/?hl=es-la">
+      <img src="images/INS.png" id="ins" alt="logo instagram">
+    </a>
+    <a href="https://www.youtube.com/c/RickyMortyEscenas/featured">
+      <img src="images/YT.png" id="yt" alt="logo youtube">
+    </a>
+  </div>
+</footer>
+<div id="root"></div>
+<script src="main.js" type="module"></script>
 
-
-    <section class="principal">
-      <div class="container">
-        <ul class="slider">
-          <li id="slider1">
-            <img src="images/slider1.png" alt="">
-          </li>
-          <li id="slider2">
-            <img src="images/slider2.jpg" alt="">
-          </li>
-          <li id="slider3">
-            <img src="images/slider3.jpg" alt="">
-          </li>
-          <li id="slider4">
-            <img src="images/slider4.jpg" alt="">
-          </li>
-          <li id="slider5">
-            <img src="images/slider5.jpg" alt="">
-          </li>
-          <li id="slider6">
-            <img src="images/slider6.jpg" alt="">
-          </li>
-          <li id="slider7">
-            <img src="images/slider7.jpg" alt="">
-          </li>
-        </ul>
-      </div>
-      <div class="img" >
-        <img id="imgTitle" src="images/Titulo R&M2.png" alt="">
-      </div>
-      <div class="description">
-        <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico, egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy listo. Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del Cosmos y Universos paralelos.</p>
-      </div>
-    </section>
-    <section class="principal2">
-      <section class="menu">
-        <div class="divFilter" id="filter">
-           <label class="labFieldset">Filtrar por:</label>
-           <select name="genero" id="gender" class="divGender">
-             <option value="none">Género</option>
-             <option value="Female">Mujer</option>
-             <option value="Male">Hombre</option>
-             <option value="Genderless">Sin género</option>
-             <option value="unknown">Desconocido</option>
-           </select>
-           <select name="especie" id="species" class="divSpecies">
-             <option value="none">Especie</option>
-             <option value="Human">Humano</option>
-             <option value="Alien">Alien</option>
-             <option value="Humanoid">Humanoide</option>
-             <option value="Robot">Robot</option>
-             <option value="Disease">Enfermedad</option>
-             <option value="Parasite">Parásito</option>
-             <option value="Poopybutthole">Poopybutthole</option>
-             <option value="Mytholog">Mytholog</option>
-             <option value="Animal">Animal</option>
-             <option value="Vampire">Vampiro</option>
-             <option value="Cronenberg">Cronenberg</option>
-             <option value="unknown">Desconocido</option>
-           </select>
-           <select name="estado" id="status" class="divStatus">
-             <option value="none">Estado</option>
-             <option value="Alive">Vivo</option>
-             <option value="Dead">Muerto</option>
-             <option value="unknown">Desconocido</option>
-           </select>
-           <select name="season and episodes" id="season" class="divSeason">
-              <option value="none">Episodios</option>
-              <option value="seasonOne">Episodio 1</option>
-              <option value="seasonTwo">Episodio 2</option>
-              <option value="seasonThree">Episodio 3</option>
-            </select>
-           <label class="labFieldset">Ordenar por:</label>
-           <select name="ordenar" id="alphabet" class="divAlphabet">
-             <option value="none">Relevancia</option>
-             <option value="ascend">A-Z</option>
-             <option value="descend">Z-A</option>
-           </select>
-           <button id="applyFilters">Aplicar</button>
-           <button id="clean">Limpiar datos</button>
-        </div>
-     </section>
-      <h2>Personajes</h2>
-      <div class="character-container" id="characters">
-
-      </div>
-    </section>
-      <footer>
-        <div class="networks">
-          <a href="https://web.facebook.com/RickandMorty/">
-            <img src="images/FB.png" id="fb" alt="logo facebook">
-          </a>
-          <a href="https://www.instagram.com/rickandmorty/?hl=es-la">
-            <img src="images/INS.png" id="ins" alt="logo instagram">
-          </a>
-          <a href="https://www.youtube.com/c/RickyMortyEscenas/featured">
-            <img src="images/YT.png" id="yt" alt="logo youtube">
-          </a>
-        </div>
-      </footer>
-    </body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
 </html>
