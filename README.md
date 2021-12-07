@@ -109,8 +109,8 @@ En este proyecto crearemos un APIcon la data procurada en el repositorio, en est
 ![](src/images/prototipos/prototipo4.jpeg)
 
 **Prototipo final**
+![](src/images/prototipos/prototipoFinal.png)
 
-![PF](https://github.com/G9D4/LIM016-data-lovers/blob/main/src/imagenesrdm/prototipo2.PNG)
 
 ## 6. Tests de usabilidad
 
