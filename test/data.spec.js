@@ -1,4 +1,4 @@
-import { filterDataByGender } from '../src/data.js';
+import { filterDataByGender, filterDataByStatus, filterDataBySpecies, filterDataByOrigin } from '../src/data.js';
 const data = [{
   "id": 1,
   "name": "Rick Sanchez",
@@ -97,3 +97,52 @@ describe('filterByGender', () => {
     expect(filterDataByGender(data, "Female")).toStrictEqual(result2);
   });
 });
+
+const result3 = [data[0],data[1],data[2]]
+describe('filterByStatus', () => {
+  it('is a function', () => {
+    expect(typeof filterDataByStatus).toBe('function');
+
+  });
+
+  it('returns `example`', () => {
+    expect(filterDataByStatus(data, "Alive")).toStrictEqual(result3);
+  });
+});
+
+const result4 = [data[0],data[1],data[2]]
+describe('filterBySpecies', () => {
+  it('is a function', () => {
+    expect(typeof filterDataBySpecies).toBe('function');
+
+  });
+
+  it('returns `example`', () => {
+    expect(filterDataBySpecies(data, "Human")).toStrictEqual(result4);
+  });
+});
+
+const result5 = [data[0],data[1]]
+describe('filterByOrigin', () => {
+  it('is a function', () => {
+    expect(typeof filterDataByOrigin).toBe('function');
+
+  });
+
+  it('returns `example`', () => {
+    expect(filterDataByOrigin(data, "Earth (C-137)")).toStrictEqual(result5);
+  });
+});
+
+const result6 = [data[2]]
+describe('filterByOrigin', () => {
+  it('is a function', () => {
+    expect(typeof filterDataByOrigin).toBe('function');
+
+  });
+
+  it('returns `example`', () => {
+    expect(filterDataByOrigin(data, "Earth (Replacement Dimension)")).toStrictEqual(result6);
+  });
+});
+
