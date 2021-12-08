@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eb886c1716.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
@@ -111,9 +112,14 @@
     <div class="logo">
       <img id="logo" src="images/LogoHeadRM.png" alt="">
     </div>
-    <div class="buttonFilters">
-      <a href="index.html"><button id="home">Regresar</button></a>
-      <a href="filters.html"><button id="filterCharacters">Personajes</button></a>
+    <div class="nav-menu">
+      <button class="nav-bars" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="buttonFilters">
+        <a href="index.html"><button id="home">Regresar</button></a>
+        <a href="filters.html"><button id="filterCharacters">Personajes</button></a>
+      </div>
     </div>
   </header>
   <!--Table and divs that hold the pie charts-->
@@ -132,20 +138,20 @@
   </table>
   <br>
   <br>
-
+  <footer>
+    <div class="networks">
+      <a href="https://web.facebook.com/RickandMorty/">
+        <img src="images/FB.png" id="fb" alt="logo facebook">
+      </a>
+      <a href="https://www.instagram.com/rickandmorty/?hl=es-la">
+        <img src="images/INS.png" id="ins" alt="logo instagram">
+      </a>
+      <a href="https://www.youtube.com/c/RickyMortyEscenas/featured">
+        <img src="images/YT.png" id="yt" alt="logo youtube">
+      </a>
+    </div>
+  </footer>
+  <script src="responsive.js"></script>
 </body>
-<footer>
-  <div class="networks">
-    <a href="https://web.facebook.com/RickandMorty/">
-      <img src="images/FB.png" id="fb" alt="logo facebook">
-    </a>
-    <a href="https://www.instagram.com/rickandmorty/?hl=es-la">
-      <img src="images/INS.png" id="ins" alt="logo instagram">
-    </a>
-    <a href="https://www.youtube.com/c/RickyMortyEscenas/featured">
-      <img src="images/YT.png" id="yt" alt="logo youtube">
-    </a>
-  </div>
-</footer>
 
 </html>

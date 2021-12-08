@@ -1,15 +1,15 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import { filterDataByGender, filterDataBySpecies, filterDataByStatus, sortAZData, sortZAData } from "./data.js";
+import { filterDataByGender, filterDataBySpecies, filterDataByStatus, sort_az, sort_za, } from "./data.js";
 
-let gender = '';
-let status = '';
-let species = '';
 let arrayData = [];
 arrayData = data.results;
 let mainCharacters = document.getElementById("characters");
+let gender = '';
+let status = '';
+let species = '';
+let orderAtoZ = document.getElementById("sort_az");
+let orderZtoA = document.getElementById("sort_za");
 printData(arrayData);
-SortBy(arrayData);
-
 
 // tample string para poder dar estilo en CSS
 function printData(data) {
@@ -39,8 +39,9 @@ function printData(data) {
   mainCharacters.innerHTML = profiles;
 }
 
-/*Aplicar todos los filtros*/
+//Apply all filters
 
+//***************Filter by Gender *********
 let genderChoice = document.getElementById("gender")
 //evento que cambia segun la seleccion en la barra de navegación. (e.target.value) obtener el valor de los cambios del select
 genderChoice.addEventListener('change', (e) => {
@@ -63,6 +64,7 @@ genderChoice.addEventListener('change', (e) => {
   }
 })
 
+//***************Filter by Species *********
 
 let specieChoice = document.getElementById("species")
 specieChoice.addEventListener('change', (e) => {
@@ -83,6 +85,8 @@ specieChoice.addEventListener('change', (e) => {
   }
 });
 
+//***************Filter by Status *********
+
 let statusChoice = document.getElementById("status")
 statusChoice.addEventListener('change', (e) => {
   status = (e.target.value);
@@ -102,25 +106,24 @@ statusChoice.addEventListener('change', (e) => {
   }
 });
 
-function SortBy(arrayData) {
-  let filterSort;
-  switch (arrayData) {
-    case 'az':
-      filterSort = sortAZData(arrayData, 'name');
-      break;
-    case 'za':
-      filterSort = sortZAData(arrayData, 'name');
-      break;
-    default:
-      break;
-  }
+//********** */ Filter by alphabetical Az*********
+orderAtoZ.addEventListener("click", function () {
+  document.getElementsByClassName("character-container")[0].innerHTML = "";
+  sort_az(arrayData);
+  printData(arrayData);
+});
 
-  return (filterSort)
-}
+//*********** */ Filter by alphabetical Za*************
+orderZtoA.addEventListener("click", function () {
+  document.getElementsByClassName("character-container")[0].innerHTML = "";
+  sort_za(arrayData);
+  printData(arrayData);
+});
 
-/*Limpiar datos*/
+//**********Clean **********
 
 let clean = document.getElementById("clean")
 clean.addEventListener('click', () => {
   location.reload()
+  printData(arrayData);
 })

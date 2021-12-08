@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eb886c1716.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,8 +19,11 @@
     <div class="logo">
       <img id="logo" src="images/LogoHeadRM.png" alt="">
     </div>
-    <section class="menu">
-      <div class="divFilter" id="filter">
+    <button class="nav-bars" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <section class="menu2">
+      <div class="nav-menu" id="filter">
         <div class="labelFilterBy">
           <label class="labFieldset">Filtrar por:</label>
         </div>
@@ -58,14 +62,16 @@
           </select>
         </div>
         <div class="labelFieldSet">
-          <label class="labFieldset">Ordenar por:</label>
+          <label class="labFieldset">Ordenar:</label>
         </div>
-        <div class="alphabet">
-          <select name="ordenar" id="alphabet" class="divAlphabet">
-            <option value="none">Relevancia</option>
-            <option value="ascend">A-Z</option>
-            <option value="descend">Z-A</option>
-          </select>
+        <div class="Order_Alphabetic">
+          <div class="box_filter_by">
+            <input type="image" class="button_alphabet" id="sort_az" src="./images/Iconos/A-Z.png">
+          </div>
+
+          <div class="box_filter_by">
+            <input type="image" class="button_alphabet" id="sort_za" src="./images/Iconos/Z-A.png">
+          </div>
         </div>
         <div class="button">
           <button id="clean">Limpiar datos</button>
@@ -75,13 +81,14 @@
       </div>
     </section>
   </header>
-  <section class="principal2">
-    <h2>Personajes</h2>
-    <div class="character-container" id="characters">
+  <main>
+    <section class="principal2">
+      <h2>Personajes</h2>
+      <div class="character-container" id="characters">
 
-    </div>
-  </section>
-
+      </div>
+    </section>
+  </main>
   <footer>
     <div class="networks">
       <a href="https://web.facebook.com/RickandMorty/">
@@ -98,5 +105,6 @@
 </body>
 <div id="root"></div>
 <script src="main.js" type="module"></script>
+<script src="responsive.js"></script>
 
 </html>

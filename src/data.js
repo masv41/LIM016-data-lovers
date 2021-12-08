@@ -7,28 +7,21 @@ export const filterDataBySpecies = (data, value) => data.filter(person => person
 export const filterDataByStatus = (data, value) => data.filter(person => person.status === value);
 export const filterDataByOrigin = (data, value) => data.filter(person => person.origin.name === value);
 
-export const sortAZData = (data) => {
-  return data.sort((a, b) => {
-    const nameA = a.name.toLowerCase();
-    const nameB = b.name.toLowerCase();
-    if (nameA < nameB){
-      return -1
-    }
-    if (nameA > nameB) {
-      return 1
-    }
-  });
-  }
+export function compareStrings(a, b) {
+  a = a.toLowerCase();
+  b = b.toLowerCase();
 
-  export const sortZAData = (data) => {
-    return data.sort((a, b) => {
-    const nameA = a.name.toLowerCase();
-    const nameB = b.name.toLowerCase();
-    if (nameA < nameB){
-      return 1
-    }
-    if (nameA > nameB) {
-      return -1
-    }
-  });
-  }
+  return (a < b) ? -1 : (a > b) ? 1 : 0;
+}
+
+export const sort_az = (arraytosort) => {
+  return arraytosort.sort(function(a, b) {
+    return compareStrings(a.name, b.name);
+})
+};
+
+export const sort_za = (arraytosort) => {
+  return arraytosort.sort(function(a, b) {
+    return compareStrings(b.name, a.name);
+})
+};

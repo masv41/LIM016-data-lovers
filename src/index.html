@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eb886c1716.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -18,8 +19,11 @@
     <div class="logo">
       <img id="logo" src="images/LogoHeadRM.png" alt="">
     </div>
+    <button class="nav-bars" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
     <section class="menu1">
-      <div class="divView" id="newView">
+      <div class="nav-menu" id="newView">
         <select name="season and episodes" id="season" class="divSeason">
           <option value="none">Temporadas</option>
           <option value="seasonOne">Temporada 1</option>
@@ -86,6 +90,7 @@
 
   <div id="root"></div>
   <script src="main.js" type="module"></script>
+  <script src="responsive.js"></script>
 </body>
 
 </html>
