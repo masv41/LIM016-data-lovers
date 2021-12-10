@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,inicial-scale=1.0">
-
-  <title>Addicted to [Adult Swim] </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personajes de R&M</title>
   <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -15,65 +15,144 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <img id="logo" src="images/LogoHeadRM.png" alt="">
-    </div>
-    <button class="nav-bars" aria-label="Abrir menú">
-      <i class="fas fa-bars"></i>
-    </button>
-    <section class="menu1">
-      <div class="nav-menu" id="newView">
-        <select name="season and episodes" id="season" class="divSeason">
-          <option value="none">Temporadas</option>
-          <option value="seasonOne">Temporada 1</option>
-          <option value="seasonTwo">Temporada 2</option>
-          <option value="seasonThree">Temporada 3</option>
-        </select>
-        <a href="filters.html"><button id="filterCharacters">Personajes</button></a>
-        <a href="grafics.html"><button id="Statistics">Estadisticas</button></a>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <img class="logo" src="images/LogoHeadRM.png" alt="Rick and Morty">
       </div>
-    </section>
-  </header>
-  <div class="principal">
-    <div class="container">
-      <ul class="slider">
-        <li id="slider1">
-          <img src="images/slider1.png" alt="">
+      <button class="nav-bars" aria-label="Abrir menu">
+        <i class="fas fa-bars" alt="Menu"></i>
+      </button>
+      <ul class="nav-menu nav-menu_visible" data-animation="center">
+        <li class="nav-menu-item">
+          <a class="nav-menu-link nav-link" href="#Principal">Principal</a>
         </li>
-        <li id="slider2">
-          <img src="images/slider2.jpg" alt="">
+        <li class="nav-menu-item">
+          <a class="nav-menu-link nav-link" href="#Acerca_de">Acerca de</a>
         </li>
-        <li id="slider3">
-          <img src="images/slider3.jpg" alt="">
+        <li class="nav-menu-item">
+          <a class="nav-menu-link nav-link" href="#Personajes">Personajes</a>
         </li>
-        <li id="slider4">
-          <img src="images/slider4.jpg" alt="">
-        </li>
-        <li id="slider5">
-          <img src="images/slider5.jpg" alt="">
-        </li>
-        <li id="slider6">
-          <img src="images/slider6.jpg" alt="">
-        </li>
-        <li id="slider7">
-          <img src="images/slider7.jpg" alt="">
+        <li class="nav-menu-item">
+          <a class="nav-menu-link nav-link" onclick="openPage('Estadisticas', this,' rgb(12 46 45 / 0%)')">Estadisticas</a>
         </li>
       </ul>
-    </div>
-    <div class="img">
-      <img id="imgTitle" src="images/Titulo R&M2.png" alt="">
-    </div>
-    <div class="description">
-      <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico,
-        egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su
-        hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy
-        listo.
-        Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del Cosmos y Universos
-        paralelos.</p>
-    </div>
-  </div>
+    </nav>
+  </header>
 
+  <main>
+    <section id="Principal" class="principal">
+      <div class="principal">
+        <div class="container">
+          <ul class="slider">
+            <li id="slider1">
+              <img src="images/slider1.png" alt="">
+            </li>
+            <li id="slider2">
+              <img src="images/slider2.jpg" alt="">
+            </li>
+            <li id="slider3">
+              <img src="images/slider3.jpg" alt="">
+            </li>
+            <li id="slider4">
+              <img src="images/slider4.jpg" alt="">
+            </li>
+            <li id="slider5">
+              <img src="images/slider5.jpg" alt="">
+            </li>
+            <li id="slider6">
+              <img src="images/slider6.jpg" alt="">
+            </li>
+            <li id="slider7">
+              <img src="images/slider7.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="img">
+          <img id="imgTitle" src="images/Titulo R&M2.png" alt="">
+        </div>
+        <div class="description">
+          <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico,
+            egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su
+            hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy
+            listo.
+            Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del Cosmos y Universos
+            paralelos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Acerca_de" class="about_RM">
+      <h1>Rick and Morty</h1>
+      <p>Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para adultos creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. Roiland es el encargado de darle voz a Rick y a Morty, la serie también incluye las voces de Chris Parnell, Spencer Grammer y Sarah Chalke.
+
+        La serie se originó por un cortometraje rudimentario animado por Roiland para el festival de cine Channel 101 llamado Doc and Mharti, una parodia de los principales protagonistas de Back to the Future. Cuando la cadena NBC despidió a Harmon en 2013 por discusiones entre él y los ejecutivos de la serie que había creado, Community, él y Roiland desarrollaron una serie basada en los personajes ya creados por Roiland.</p>
+    </section>
+
+    <section id="Personajes" class="menu">
+      <div class="nav-menu" id="filter">
+        <div class="labelFilterBy">
+          <label class="labFieldset">Filtrar por:</label>
+        </div>
+        <div class="filter_by">
+          <select name="genero" id="gender" class="divGender">
+            <option value="none">Género</option>
+            <option value="Female">Mujer</option>
+            <option value="Male">Hombre</option>
+            <option value="Genderless">Sin género</option>
+            <option value="unknown">Desconocido</option>
+          </select>
+        </div>
+        <div class="filter_by">
+          <select name="especie" id="species" class="divSpecies">
+            <option value="none">Especie</option>
+            <option value="Human">Humano</option>
+            <option value="Alien">Alien</option>
+            <option value="Humanoid">Humanoide</option>
+            <option value="Robot">Robot</option>
+            <option value="Disease">Enfermedad</option>
+            <option value="Parasite">Parásito</option>
+            <option value="Poopybutthole">Poopybutthole</option>
+            <option value="Mytholog">Mytholog</option>
+            <option value="Animal">Animal</option>
+            <option value="Vampire">Vampiro</option>
+            <option value="Cronenberg">Cronenberg</option>
+            <option value="unknown">Desconocido</option>
+          </select>
+        </div>
+        <div class="filter_by">
+          <select name="estado" id="status" class="divStatus">
+            <option value="none">Estado</option>
+            <option value="Alive">Vivo</option>
+            <option value="Dead">Muerto</option>
+            <option value="unknown">Desconocido</option>
+          </select>
+        </div>
+        <div class="labelFieldSet">
+          <label class="labFieldset">Ordenar:</label>
+        </div>
+        <div class="Order_Alphabetic">
+          <div class="filter_by">
+            <input type="image" class="button_alphabet" id="sort_az" src="./images/Iconos/A-Z.png">
+          </div>
+
+          <div class="filter_by">
+            <input type="image" class="button_alphabet" id="sort_za" src="./images/Iconos/Z-A.png">
+          </div>
+        </div>
+        <div class="button">
+          <button id="clean">Limpiar datos</button>
+        </div>
+      </div>
+    </section>
+    <section id="Personajes" class="principal2">
+      <h2>Personajes</h2>
+      <div class="character-container" id="characters">
+
+      </div>
+    </section>
+    </section>
+  </main>
   <footer>
     <div class="networks">
       <a href="https://web.facebook.com/RickandMorty/">
@@ -87,10 +166,8 @@
       </a>
     </div>
   </footer>
-
-  <div id="root"></div>
-  <script src="main.js" type="module"></script>
-  <script src="responsive.js"></script>
 </body>
+<script src="main.js" type="module"></script>
+<script src="responsive.js"></script>
 
 </html>

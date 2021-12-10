@@ -1,4 +1,4 @@
-import { filterDataByGender, filterDataByStatus, filterDataBySpecies, filterDataByOrigin } from '../src/data.js';
+import { filterDataByGender, filterDataByStatus, filterDataBySpecies, filterDataByOrigin, sort_az, sort_za, compareStrings} from '../src/data.js';
 const data = [{
   "id": 1,
   "name": "Rick Sanchez",
@@ -146,3 +146,42 @@ describe('filterByOrigin', () => {
   });
 });
 
+const result7 = [data[1], data[0], data[2]]
+describe('sort_az', () =>{
+  it('is a function', ()=> {
+    expect(typeof sort_az).toBe('function');
+  });
+
+  it('returns `example`', () => {
+    expect(sort_az(data)).toStrictEqual(result7);
+  })
+});
+
+const result8 = [data[2], data[0], data[1]]
+describe('sort_za', () =>{
+  it('is a function', ()=> {
+    expect(typeof sort_za).toBe('function');
+  });
+
+  it('returns `example`', () => {
+    expect(sort_za(data)).toStrictEqual(result8);
+  })
+});
+
+describe('compareStrings', () =>{
+  it('is a function', ()=> {
+    expect(typeof compareStrings);
+  });
+
+  it('returns `example`', () => {
+    expect(compareStrings("Morty","Summer")).toStrictEqual(-1);
+  });
+
+  it('returns `example`', () => {
+    expect(compareStrings("Summer","Morty")).toStrictEqual(1);
+  });
+
+  it('returns `example`', () => {
+    expect(compareStrings("Rick","Rick")).toStrictEqual(0);
+  });
+});
