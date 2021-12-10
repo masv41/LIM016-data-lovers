@@ -12,6 +12,102 @@
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/eb886c1716.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+
+    google.charts.load('current', { 'packages': ['corechart'] });
+
+    google.charts.setOnLoadCallback(drawGenderChart);
+    google.charts.setOnLoadCallback(drawSpecieChart);
+    google.charts.setOnLoadCallback(drawStatusChart);
+
+
+
+    // Callback that draws the pie chart for filter by gender
+    function drawGenderChart() {
+
+      // Create the data table for filter by gender.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Gender');
+      data.addColumn('number', 'Characters');
+      data.addRows([
+        ['Masculino', 372],
+        ['Femenino', 73],
+        ['Sin Genero', 6],
+        ['Desconocido', 42],
+      ]);
+
+      // Set options for gender´s pie chart.
+      var options = {
+        title: 'Personajes Por Tipo de Genero',
+        width: 400,
+        height: 300
+      };
+
+      // Instantiate and draw the chart for filter by gender.
+      var chart = new google.visualization.PieChart(document.getElementById('gender_chart_div'));
+      chart.draw(data, options);
+    }
+
+    // Callback that draws the pie chart for filter by Species.
+    function drawSpecieChart() {
+
+      // Create the data table for filter by species.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'status');
+      data.addColumn('number', 'characters');
+      data.addRows([
+        ['Humano', 244],
+        ['Alien', 132],
+        ['Humanoide', 53],
+        ['Robot', 11],
+        ['Enfermedad', 6],
+        ['Parasito', 1],
+        ['Poopybutthole', 6],
+        ['Mytholog', 7],
+        ['Animal', 17],
+        ['Vampiro', 3],
+        ['Cronenberg', 8],
+        ['Desconocido', 5],
+      ]);
+
+      // Set options for species chart.
+      var options = {
+        title: 'Personajes por Especies',
+        width: 400,
+        height: 300
+      };
+
+      // Instantiate and draw the chart for filter by species.
+      var chart = new google.visualization.PieChart(document.getElementById('species_chart_div'));
+      chart.draw(data, options);
+    }
+
+    // Callback that draws the pie chart for filter by status.
+    function drawStatusChart() {
+
+      // Create the data table for filter by status.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'status');
+      data.addColumn('number', 'characters');
+      data.addRows([
+        ['Vivo', 281],
+        ['Muerto', 147],
+        ['Desconocido', 65],
+      ]);
+
+      // Set options for filter by status chart.
+      var options = {
+        title: 'Personajes por Estado',
+        width: 400,
+        height: 300
+      };
+
+      // Instantiate and draw the chart for filter by status.
+      var chart = new google.visualization.PieChart(document.getElementById('status_chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
 </head>
 
 <body>
@@ -25,23 +121,23 @@
       </button>
       <ul class="nav-menu nav-menu_visible" data-animation="center">
         <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#Principal">Principal</a>
+          <a class="nav-menu-link nav-link" onclick="openPage()">Principal</a>
         </li>
         <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#Acerca_de">Acerca de</a>
+          <a class="nav-menu-link nav-link" onclick="openPage1()">Acerca de</a>
         </li>
         <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" href="#Personajes">Personajes</a>
+          <a class="nav-menu-link nav-link" onclick="openPage2()">Personajes</a>
         </li>
         <li class="nav-menu-item">
-          <a class="nav-menu-link nav-link" onclick="openPage('Estadisticas', this,' rgb(12 46 45 / 0%)')">Estadisticas</a>
+          <a class="nav-menu-link nav-link" onclick="openPage3()">Estadisticas</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="Principal" class="principal">
+    <section id="Principal" class="box">
       <div class="principal">
         <div class="container">
           <ul class="slider">
@@ -73,7 +169,8 @@
         </div>
         <div class="description">
           <p>Rick Sánchez es un ejemplo del típico "científico loco". Es un genio, pero es irresponsable, alcohólico,
-            egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de su
+            egoísta, un poco depresivo y con poca cordura. Rick por diferentes razones termina mudándose a la casa de
+            su
             hija Beth y en ese momento se encuentra con su nieto Morty; un chico de 14 años de edad, tímido y no muy
             listo.
             Al juntarse con su nieto, Rick y Morty viven una variedad de aventuras a lo largo del Cosmos y Universos
@@ -82,14 +179,28 @@
       </div>
     </section>
 
-    <section id="Acerca_de" class="about_RM">
-      <h1>Rick and Morty</h1>
-      <p>Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para adultos creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. Roiland es el encargado de darle voz a Rick y a Morty, la serie también incluye las voces de Chris Parnell, Spencer Grammer y Sarah Chalke.
+    <section id="about_RM" class="box">
+      <div class="About_RM">
+        <img src="images/AboutRM.jpg" alt="">
+        <br>
+        <h1>Rick and Morty</h1>
+        <p>Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para adultos
+          creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. La serie sigue las desventuras de un
+          científico,
+          Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes
+          espaciales, temporales e intergalácticos. Roiland es el encargado de darle voz a Rick y a Morty, la serie
+          también incluye las voces de Chris Parnell, Spencer Grammer y Sarah Chalke.
 
-        La serie se originó por un cortometraje rudimentario animado por Roiland para el festival de cine Channel 101 llamado Doc and Mharti, una parodia de los principales protagonistas de Back to the Future. Cuando la cadena NBC despidió a Harmon en 2013 por discusiones entre él y los ejecutivos de la serie que había creado, Community, él y Roiland desarrollaron una serie basada en los personajes ya creados por Roiland.</p>
+          La serie se originó por un cortometraje rudimentario animado por Roiland para el festival de cine Channel 101
+          llamado Doc and Mharti, una parodia de los principales protagonistas de Back to the Future. Cuando la cadena
+          NBC
+          despidió a Harmon en 2013 por discusiones entre él y los ejecutivos de la serie que había creado, Community,
+          él
+          y Roiland desarrollaron una serie basada en los personajes ya creados por Roiland.</p>
+      </div>
     </section>
 
-    <section id="Personajes" class="menu">
+    <section id="PersonajesMenu" class="box">
       <div class="nav-menu" id="filter">
         <div class="labelFilterBy">
           <label class="labFieldset">Filtrar por:</label>
@@ -145,12 +256,28 @@
         </div>
       </div>
     </section>
-    <section id="Personajes" class="principal2">
+    <section id="Personajes" class="box">
       <h2>Personajes</h2>
       <div class="character-container" id="characters">
 
       </div>
     </section>
+
+    <section id="Grafics" class="box">
+      <!--Table and divs that hold the pie charts-->
+      <table class="columns">
+        <tr>
+          <td>
+            <div id="gender_chart_div" style="border: 4px solid #FCFFA6"></div>
+          </td>
+          <td>
+            <div id="species_chart_div" style="border: 4px solid #FCFFA6"></div>
+          </td>
+          <td>
+            <div id="status_chart_div" style="border: 4px solid #FCFFA6"></div>
+          </td>
+        </tr>
+      </table>
     </section>
   </main>
   <footer>
@@ -169,5 +296,42 @@
 </body>
 <script src="main.js" type="module"></script>
 <script src="responsive.js"></script>
+<script>
+
+  //**********Mostrar y ocultar sections */
+
+  function openPage() {
+    document.getElementById('Principal').style.display = 'block';
+    document.getElementById('about_RM').style.display = 'none';
+    document.getElementById('PersonajesMenu').style.display = 'none';
+    document.getElementById('Personajes').style.display = 'none';
+    document.getElementById('Grafics').style.display = 'none';
+  }
+
+  function openPage1() {
+    document.getElementById('Principal').style.display = 'none';
+    document.getElementById('about_RM').style.display = 'block';
+    document.getElementById('PersonajesMenu').style.display = 'none';
+    document.getElementById('Personajes').style.display = 'none';
+    document.getElementById('Grafics').style.display = 'none';
+  }
+
+  function openPage2() {
+    document.getElementById('about_RM').style.display = 'none';
+    document.getElementById('Principal').style.display = 'none';
+    document.getElementById('PersonajesMenu').style.display = 'block';
+    document.getElementById('Personajes').style.display = 'block';
+    document.getElementById('Grafics').style.display = 'none';
+  }
+
+  function openPage3() {
+    document.getElementById('about_RM').style.display = 'none';
+    document.getElementById('Principal').style.display = 'none';
+    document.getElementById('PersonajesMenu').style.display = 'none';
+    document.getElementById('Personajes').style.display = 'none';
+    document.getElementById('Grafics').style.display = 'block';
+  }
+
+</script>
 
 </html>

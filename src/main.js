@@ -127,3 +127,5 @@ clean.addEventListener('click', () => {
   location.reload()
   printData(arrayData);
 })
+
+
