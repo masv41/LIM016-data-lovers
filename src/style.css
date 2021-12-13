@@ -1017,4 +1017,100 @@ fieldset{
     .columns {
       background: #77e4d4;
     }
+  
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      max-width: 992px;
+      margin: 0 auto;
     }
+/*debe estr aplicado a todos los enlaces en html*/
+    .nav-link{
+  color: white;
+  text-decoration: none;
+    }
+    .nav-menu {
+      display: flex;
+      margin-right: 40px;
+      list-style:none,
+    }
+    .nav-menu-item {
+      font-size: 18px;
+      margin: 0 10px;
+      line-height: 80px;
+      text-transform: uppercase;
+      width: max-content;
+    }
+
+    .nav-menu-link{
+      padding: 8px 12px;
+      border-radius: 3px;
+    }
+     .nav-menu-link:hover,
+     .nav-menu-link_active {
+       background-color: yellowgreen;
+      transition: 0.5s;
+     }
+
+    .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display:none;
+    }
+
+
+    .nav-bars {
+      color: white;
+      background:none;
+      border: none;
+      font-size: 30px;
+      padding: 0 20px;
+      line-height: 60px;
+      display: none;
+
+    }
+    }
+@media (max-width: 768pxx) {
+  .nav-menu {
+flex-direction: column;
+align-items: center;
+margin-right: 0px;
+background-color: yellowgreen;
+position: fixed;
+top: 60px;
+left: 0;
+width: 100%;
+padding: 20px 0;
+
+height: calc(100% - 60px);
+overflow-y: auto;
+
+left: 100%;
+transition: left 0.3s;
+  }
+  
+  .nav-menu-item {
+line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+background: none;
+color: yellowgreen;
+
+  }
+  .nav-toggle{
+    display: block;
+  }
+
+  .nav-menu_visible {
+  left: 0;
+  }
+
+}
