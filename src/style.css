@@ -13,18 +13,17 @@
 }
 
 /* ******* todas las paginas ******* */
-
+body {
+  width: 100%;
+  background: #eaeaea;
+}
 .header {
   background: #d1d94b;
   padding: 5%;
   width: 100%;
-  height: 40px;
-  margin-top: 1%;
-}
-.logo {
-  width: 180px;
-  height: 180px;
-  margin-top: -6%;
+  height: 80px;
+  top: 1%;
+  left: 0%;
 }
 .nav {
   display: flex;
@@ -33,7 +32,14 @@
   margin: 0 auto;
   cursor: pointer;
 }
+.logo {
+  height: 150px;
+  width: 250px;
+  padding: 0 40px;
+  margin-top: -5%;
+}
 
+/* Bar Menu */
 .nav-link {
   color: rgb(36, 34, 34);
   text-decoration: none;
@@ -43,7 +49,6 @@
   margin-right: 10px;
   list-style: none;
 }
-
 .nav-menu-item {
   font-size: 22px;
   font-family: "Indie Flower", cursive;
@@ -52,12 +57,10 @@
   text-transform: uppercase;
   width: max-content;
 }
-
 .nav-menu-link {
   padding: 8px 12px;
   border-radius: 8px;
 }
-
 .nav-menu-link:hover,
 .nav-menu-link_active {
   background-color: #98ddca;
@@ -71,11 +74,10 @@
   padding: 0 20px;
   line-height: 60px;
   display: none;
+  cursor: pointer;
 }
-body {
-  width: 100%;
-  background: #eaeaea;
-}
+
+/* Footer*/
 footer img {
   height: 3vw;
   cursor: pointer;
@@ -206,61 +208,32 @@ ul.slider li img {
   background: #97ce4c;
   border-radius: 10px;
   padding: 30px;
-  font-family: "Indie Flower", cursive;
-  font-size: 22px;
   width: 95%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  text-align: justify;
+}
+h1 {
+  text-align: center;
+  margin: 2%;
+  text-align: center;
+  font-size: 40px;
 }
 .About_RM img {
   width: 450px;
   height: 350px;
-  border-radius: 10px;
-  float: left;
-}
-h1 {
-  position: relative;
-  margin: 2%;
-  text-align: center;
-  font-size: 30px;
-}
-/* ******* Personajes ******* */
-#PersonajesMenu {
-  background: #d1d94b;
-  width: 80%;
-  margin-left: 8%;
-  margin-top: 5%;
   border-radius: 5px;
-  padding-left: 5%;
+  float: left;
+  padding: 1%;
 }
-.nav-menu select {
-  background: transparent;
+.About_RM p{
   font-family: "Indie Flower", cursive;
-  border: none;
-  font-size: 20px;
-  height: 40px;
-  padding: 5px;
-  width: 140px;
-  border-radius: 10px;
+  font-size: 22px;
+  text-align: justify;
+  margin: 3%;
 }
-.nav-menu select:hover {
-  background: #77e4d4;
-}
-.nav-menu button {
-  background: transparent;
-  font-family: "Indie Flower", cursive;
-  font-size: 20px;
-  margin: 0%;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.nav-menu button:hover {
-  background: #77e4d4;
-}
+
+
+/* ******* Personajes ******* */
+/* BackGround Character Container*/
 #Personajes {
   background: url(images/FondoRM.png);
   background-size: 100%;
@@ -275,9 +248,21 @@ h2 {
   font-size: 40px;
   text-align: center;
 }
-.nav-menu label {
+/* Filter Menu*/
+#PersonajesMenu {
+  background: #d1d94b;
+  width: 80%;
+  margin-left: 8%;
+  margin-top: 5%;
+  border-radius: 5px;
+  padding-left: 5%;
+}
+.nav-menu1{
+  display: flex;
+}
+.nav-menu1 label {
   background: transparent;
-  margin: 5px 15px;
+  margin: 15px 20px;
   width: 150px;
   padding: 10px;
   font-family: "Indie Flower", cursive;
@@ -285,26 +270,51 @@ h2 {
   text-transform: uppercase;
   text-decoration-line: underline;
 }
+.labFieldset{
+  margin: 10% 5%;
+  top: 10px;
+
+}
+.nav-menu1 select {
+  background: transparent;
+  font-family: "Indie Flower", cursive;
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  padding: 5px;
+  width: 140px;
+  border-radius: 10px;
+}
+.nav-menu1 select:hover {
+  background: #77e4d4;
+}
+.nav-menu1 button {
+  background: transparent;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  margin: 0%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-menu1 button:hover {
+  background: #77e4d4;
+}
 .Order_Alphabetic {
   display: flex;
 }
 .button_alphabet {
-  width: 40%;
-  margin-top: -10%;
+  width: 30%;
+  margin-top: 10%;
+  padding: 0%;
 }
-
 .filter_by {
   margin: 5px;
 }
-.filter_by:hover {
-  box-shadow: 0 10px 10px 0 rgb(41, 39, 39);
-}
-.button_alphabet {
-  width: 40px;
-}
-.nav-menu {
-  display: flex;
-}
+
+
+/* Character Container*/
 .character-container {
   background: none;
   margin: -4% 0% 0% 0%;
@@ -312,7 +322,6 @@ h2 {
   flex-wrap: wrap;
   padding: 10px;
 }
-
 .cont-personajes {
   width: 18%;
   margin: 5% 0% 1% 4%;
@@ -323,10 +332,9 @@ h2 {
 }
 .name p {
   position: center;
-  text-align: left;
+  text-align: center;
   font-family: "Indie Flower", cursive;
   font-size: 28px;
-  text-align: center;
 }
 .card img {
   width: 80%;
@@ -340,6 +348,13 @@ h2 {
   font-family: "Indie Flower", cursive;
   font-size: 21px;
 }
+.info ul{
+  padding: 0%;
+}
+.name ul{
+  padding: 2px;
+  text-align: center;
+}
 
 /* ******* Grafics ******* */
 .columns {
@@ -347,60 +362,36 @@ h2 {
   margin: 8% 5% 1% 8%;
   padding: 10px;
 }
-.buttonFilters {
-  margin: -5% 2% 0% 80%;
-}
 
 /* ******* responsive ********/
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   /* ******* todas las paginas ******* */
   .header {
-    background: #d1d94b;
     padding: 0%;
-    width: 100%;
+    height: 60px;
+  }
+  .logo {
     height: 100px;
-    right: 50px;
-    margin-top: 3%;
+    width: 150px;
+    padding: 0 10px;
+    margin-top: -2%;
   }
 
-  .logo img {
-    width: 120px;
-    height: 120px;
-    margin-left: 80px;
-    margin-top: -4px;
-  }
-  .nav-bars {
-    line-height: 20px;
-    display: block;
-  }
+  /*Bar Menu*/
   .nav-menu {
     display: block;
   }
-  body {
-    width: 100%;
-    background: #eaeaea;
-    background-size: 100%;
-    flex-wrap: wrap;
+  .nav-bars {
+    line-height: 60px;
+    display: block;
   }
-  footer img {
-    height: 3vw;
-    cursor: pointer;
-    width: auto;
-    padding: 0vw 0.5vw;
-  }
-  .networks {
-    width: 20vw;
-    position: absolute;
-    left: 2%;
-  }
-
   .nav-menu {
     flex-direction: column;
     align-items: center;
     margin-right: 0px;
     background-color: yellowgreen;
     position: fixed;
-    top: 60px;
+    top: 100px;
     left: 0;
     width: 100%;
     padding: 20px 0;
@@ -410,132 +401,258 @@ h2 {
 
     left: 100%;
     transition: left 0.3s;
+    z-index: 1;
   }
   .nav-menu-item {
     line-height: 70px;
   }
-
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
+  .nav-menu-link:hover {
     background: none;
-    color: #83c5f7;
+    color: #53f0d8;
   }
-
   .nav-bars {
     display: block;
   }
-
   .nav-menu_visible {
     left: 0;
+    display:  block;
   }
-
   .nav-bars:focus:not(:focus-visible) {
     outline: none;
   }
-  /* ******* Pagina 1 ******* */
-  .menu1 {
-    margin-left: 70%;
-    margin-top: -20%;
+
+  /* Footer*/
+  .networks {
+    top: 20%;
   }
-  .menu1 select {
-    font-size: 20px;
-    height: 40px;
-    width: 140px;
-  }
-  .menu1 button {
-    font-size: 20px;
-    margin: -3% 0% 0%;
-  }
+
+  /* ******* Home ******* */
   .container {
-    max-width: 100%;
-    width: 90%;
     height: 250px;
     position: absolute;
-    left: -15%;
-    top: 18%;
+    left: 10%;
+    top: 25%;
   }
   ul.slider li img {
     height: 60%;
   }
   #imgTitle {
-    width: 350px;
-    height: 100px;
-    right: 8%;
-    top: 15%;
+    width: 50%;
+    height: 30%;
+    right: 25%;
+    top: 5%;
   }
   .description {
     max-width: 100%;
     padding: 2%;
     width: auto;
     height: auto;
-    position: absolute;
     left: 5%;
-    top: 70%;
+    top: 80%;
   }
   .description p {
     font-size: 20px;
-    text-align: justify;
-    margin-top: 0px;
-    font-family: "Road Rage", cursive;
   }
 
-  /* ******* Página 2 ******* */
+ /* ******* Acerca de ******* */
+ .About_RM {
+  margin-top: 5%;
+  padding: 10px;
+  position: absolute;
+  display: block;
+}
+h1 {
+  position: relative;
+  top: 10%;
+  font-size: 30px;
+}
+.About_RM img {
+  width: 300px;
+  height: 280px;
+  border-radius: 5px;
+  float: left;
+  padding: 1%;
+}
+.About_RM p{
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
+  text-align: justify;
+  margin: 3%;
+}
 
-  .principal2 {
-    background: url(images/FondoRM.png);
-    background-size: 100%;
-    margin: 5% 3% 10% 3%;
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    position: center;
-  }
-  h2 {
-    font-family: "Shadows Into Light", cursive;
-    font-size: 40px;
-    text-align: center;
-  }
-  .menu2 {
-    margin-left: 25%;
-    margin-top: -4%;
-  }
-  .menu2 select {
-    font-size: 20px;
-    height: 40px;
-    padding: 5px;
-    width: 130px;
-  }
-  .menu2 button {
-    display: block;
-  }
-  .menu2 label {
-    font-size: 20px;
-  }
-  .cont-personajes {
-    width: 90%;
-    margin: 5% 0% 1% 5%;
-  }
-  .name p {
-    position: center;
-    text-align: left;
-    font-size: 28px;
-  }
-  .card img {
-    width: 100%;
-    height: 70%;
-    margin: 2% 2% 5% 2%;
-  }
-  .info p {
-    font-size: 21px;
-  }
+/* ******* Personajes ******* */
+/* BackGround Character Container*/
+h2 {
+  font-size: 30px;
+}
+/* Filter Menu*/
+.nav-menu1{
+  display: block;
+}
+.button_alphabet {
+  width: 15%;
+  margin-top: 0%;
+  margin-right: 0%;
+}
+
+/* Character Container*/
+.character-container {
+  margin: 0%;
+}
+.cont-personajes {
+  width: 28%;
+}
+.name p {
+  font-size: 18px;
+  padding: 0%;
+}
+.info p {
+  font-size: 18px;
+}
+
 
   /* ******* Grafics ******* */
   .columns {
     background: #77e4d4;
     margin: 8% 5% 1% 8%;
     padding: 10px;
+    flex-direction: column;
   }
-  .buttonFilters {
-    margin: -5% 2% 0% 80%;
+
+}
+@media (max-width: 1400px) {
+  /* ******* todas las paginas ******* */
+  .header {
+    padding: 0%;
+    height: 80px;
   }
+  .logo {
+    height: 100px;
+    width: 150px;
+    padding: 0 10px;
+    margin-top: 0%;
+  }
+  .nav-menu{
+    margin-top: 3%;
+  }
+
+  /* ******* Home ******* */
+  .container {
+    left: 15%;
+    top: 20%;
+  }
+  ul.slider {
+    display: flex;
+    padding: 0;
+    width: 700%;
+    height: 450px;
+    margin-top: 0px;
+  }
+  #imgTitle {
+    width: 40%;
+    height: 20%;
+    right: 30%;
+    top: 10%;
+  }
+  .description {
+    max-width: 100%;
+    padding: 2%;
+    width: auto;
+    height: auto;
+    left: 5%;
+    top: 100%;
+    margin-bottom: 5px;
+  }
+  .description p {
+    font-size: 30px;
+  }
+
+ /* ******* Acerca de ******* */
+ .About_RM {
+  margin-top: 5%;
+  padding: 10px;
+  position: absolute;
+  display: block;
+}
+h1 {
+  position: relative;
+  top: 10%;
+  font-size: 40px;
+}
+.About_RM img {
+  width: 300px;
+  height: 280px;
+  border-radius: 5px;
+  float: left;
+  padding: 1%;
+}
+.About_RM p{
+  font-family: "Indie Flower", cursive;
+  font-size: 18px;
+  text-align: justify;
+  margin: 3%;
+}
+
+/* ******* Personajes ******* */
+/* BackGround Character Container*/
+h2 {
+  font-size: 40px;
+}
+/* Filter Menu*/
+#PersonajesMenu {
+  width: 80%;
+}
+
+.nav-menu1{
+  display: flex;
+}
+.nav-menu1 label {
+  font-size: 15px;
+  margin-top: 22%;
+}
+  .nav-menu1 select {
+  font-size: 18px;
+  height: auto;
+  width: 110px;
+  margin-top: 20%;
+}
+.nav-menu1 button {
+  font-size: 18px;
+}
+.Order_Alphabetic {
+  display: flex;
+}
+.button_alphabet {
+  width: 45%;
+  margin-top: 10%;
+}
+.filter_by {
+  margin: 0px;
+}
+
+/* Character Container*/
+.character-container {
+  margin: 0%;
+}
+.cont-personajes {
+  width: 28%;
+}
+.name p {
+  font-size: 25px;
+  text-align: center;
+  padding: 0%;
+}
+.info p {
+  font-size: 20px;
+}
+
+
+  /* ******* Grafics ******* */
+  .columns {
+    background: #77e4d4;
+    margin: 8% 5% 1% 8%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
 }

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/eb886c1716.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -114,12 +115,12 @@
   <header class="header">
     <nav class="nav">
       <div class="logo">
-        <img class="logo" src="images/LogoHeadRM.png" alt="Rick and Morty">
+        <a><img class="logo" src="images/LogoHeadRM.png" alt="Adult Swim R&M"></a>
       </div>
-      <button class="nav-bars" aria-label="Abrir menu">
+      <button class= "nav-bars" aria-label="Abrir menu">
         <i class="fas fa-bars" alt="Menu"></i>
       </button>
-      <ul class="nav-menu nav-menu_visible" data-animation="center">
+      <ul class="nav-menu">
         <li class="nav-menu-item">
           <a class="nav-menu-link nav-link" onclick="openPage()">Principal</a>
         </li>
@@ -181,9 +182,8 @@
 
     <section id="about_RM" class="box">
       <div class="About_RM">
-        <img src="images/AboutRM.jpg" alt="">
-        <br>
         <h1>Rick and Morty</h1>
+        <img src="images/AboutRM.jpg" alt="">
         <p>Rick y Morty (en inglés: Rick and Morty) es una serie de televisión estadounidense de animación para adultos
           creada por Justin Roiland y Dan Harmon en 2013 para Adult Swim. La serie sigue las desventuras de un
           científico,
@@ -201,7 +201,7 @@
     </section>
 
     <section id="PersonajesMenu" class="box">
-      <div class="nav-menu" id="filter">
+      <div class="nav-menu1" id="filter">
         <div class="labelFilterBy">
           <label class="labFieldset">Filtrar por:</label>
         </div>
@@ -295,7 +295,6 @@
   </footer>
 </body>
 <script src="main.js" type="module"></script>
-<script src="responsive.js"></script>
 <script>
 
   //**********Mostrar y ocultar sections */

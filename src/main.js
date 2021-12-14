@@ -1,6 +1,8 @@
 import data from "./data/rickandmorty/rickandmorty.js";
 import { filterDataByGender, filterDataBySpecies, filterDataByStatus, sort_az, sort_za, } from "./data.js";
 
+const navBars = document.querySelector(".nav-bars");
+const navMenu = document.querySelector(".nav-menu");
 let arrayData = [];
 arrayData = data.results;
 let mainCharacters = document.getElementById("characters");
@@ -13,6 +15,7 @@ printData(arrayData);
 
 // tample string para poder dar estilo en CSS
 function printData(data) {
+  navMenu.classList.toggle("nav-menu_visible");
   let profiles = ''
   data.forEach(function (element) {
     profiles +=
@@ -127,5 +130,22 @@ clean.addEventListener('click', () => {
   location.reload()
   printData(arrayData);
 })
+
+
+/* Responsive*/
+
+
+
+navBars.addEventListener("click", () => {
+  navMenu.classList.toggle("nav-menu_visible");
+
+
+  if (navMenu.classList.contains("nav-menu_visible")) {
+    navBars.setAttribute("aria-label","Cerrar menú");
+  } else {
+    navBars.setAttribute("aria-label", "Abrir menú");
+  }
+
+});
 
 
