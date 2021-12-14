@@ -61,40 +61,21 @@ En este proyecto crearemos un APIcon la data procurada en el repositorio, en est
 
 *	El logo de la página debe tener un tamaño, color y forma que lo distinga
 *	La imagen del header no debe opacar al logo
-*	Los botones de la sección de Índice, Lista de personajes y Lista de Episodios deben ser de un color resaltante que pertenezca a la paleta de colores de la serie y tornarse de color gris cuando se pase el mouse por encima
 *	La barra de filtrado y ordenado debe tener selects de un color de la paleta y una fuente que la caracterize
-*	Los botones de Aplicar y Limpiar Datos deben tener una buena separación y ser de colores distintos para diferenciarlos
-*	La barra de filtrado debe ser sticky para acompañar al usuario mientras baja la página
-*	Los cards tienen una imagen (con tamaño suficiente para visualizar a los personajes) y su nombre
-*	El reverso se muestra girando al pasar el mouse, mostrando su información de perfil
-*	Los íconos de redes sociales deben tener una ligera sombra amarilla (como el logo) cuando se pase el mouse
-*	Los datos de las creadoras deben ir al medio del footer en un color que resalte y con la sombra de color del logo
-*	Al lado derecho de la página debe haber un botón que ayude a regresar a la parte superior de la página
+*	Las cards tienen una imagen (con tamaño suficiente para visualizar a los personajes) y su nombre
+*	Las cards muestran su información de perfil
 
-**Definición de terminado:** la página debe ser fácil de utilizar (no conllevar a errores dependiendo de lo que requiera el usuario), los cards deben ser interactivos, la barra de filtrado debe seguir la trayectoria del usuario y la información debe ser fácil de visualizar
+**Definición de terminado:** la página debe ser fácil de utilizar, las cards deben mostrar la información debe ser fácil de visualizar
 
 
 #### c. Ser responsive en smartphones, desktops y tablets
 
-*	El documento de CSS debe usar porcentajes o la unidad vw para ajustar todas las opciones a varias pantallas de diferentes tamaños
-*	En los documentos de HTML debemos usar la etiqueta de meta, de atributo name "viewport", content "width=device-width, initial-scale=1.0"
 *	Mostrar tarjetas más pequeñas
-*	Que el menú desplegable se mantenga en la parte superior y acompañe cuando se hace el scrolling
+*	Que el menú desplegable se mantenga en la parte superior (menú barra)
 *	Las funcionalidades de la página se deben mantener en cualquier dispositivo
 *	Rediseñar para adaptarlo a teléfonos, tablets,etc
 
 **Definición de terminado:** la página debe ser visible y navegable desde una desktop, un celular o una tablet
-
-
-#### d. Contar con una bienvenida, lista de episodios y listado de personajes
-
-*	En la barra de navegación tendremos un Índice, Lista de Personajes y Lista de Episodios
-*	El index del sitio debe ser un Índice con la misma estructura, pero en su section irá una bienvenida, breve descripción del sitio y un carrusel con imágenes de la serie y algunos datos curiosos
-*	La página de Lista de Personajes incluirá a los personajes y las funciones de filtrar y ordenar, con sus resultados
-*	La página de Lista de Episodios incluirá las carátulas de cada temporada y al pasar el mouse por encima la imagen es cubierta por un recuadro de color celeste con el nombre de la temporada y sus episodios.
-
-**Definición de terminado:** el sitio completo debe ser 100% funcional y pasar por el tests de usabilidad con el despliegue en GitHub pages
-
 
 ## 5. Proceso de diseño
 
@@ -119,10 +100,7 @@ A medida que fuimos desarrollando el sitio surgieron algunos cambios de diseño 
 *	Cambiar los botones del nav a gris cuando se pase el mouse por encima o cuando se elija esa página
 *	Cambiar el cursor por pointer al pasar por los botones de navegación
 *	Hacer la descripción del sitio más corta
-*	Hacer scroll para ver la lista de personajes
-*	Agregar la cantidad de resultados de la búsqueda al filtrar
-*	Colocar un botón para regresar arriba en la página de personajes
-* Arreglar el orden en la barra de filtrado cuando se usa en otros dispositivos
-* Poder filtrar por estado de vida
+* incluir menu en barra para pantallas pequeñas
+* Poder filtrar por género, estado de vida y especie
 * Cambiar fuentes de los labels
 
