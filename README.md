@@ -86,8 +86,8 @@ En este proyecto crearemos un APIcon la data procurada en el repositorio, en est
 
 **Prototipos de alta fidelidad**
 
-![](src/images/prototipos/prototipo3.jpeg)
-![](src/images/prototipos/prototipo4.jpeg)
+![](src/images/prototipos/Prototipo3.jpeg)
+![](src/images/prototipos/Prototipo4.jpeg)
 
 **Prototipo final**
 ![](src/images/prototipos/prototipoFinal.png)
