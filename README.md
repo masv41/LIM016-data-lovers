@@ -97,10 +97,9 @@ En este proyecto crearemos un APIcon la data procurada en el repositorio, en est
 
 A medida que fuimos desarrollando el sitio surgieron algunos cambios de diseño para mejor lectura, accesibilidad y orden. Como por ejemplo:
 
-*	Cambiar los botones del nav a gris cuando se pase el mouse por encima o cuando se elija esa página
 *	Cambiar el cursor por pointer al pasar por los botones de navegación
 *	Hacer la descripción del sitio más corta
-* incluir menu en barra para pantallas pequeñas
+* incluir menu en barra para pantallas pequeñas(menú barra)
 * Poder filtrar por género, estado de vida y especie
 * Cambiar fuentes de los labels
 
