@@ -306,7 +306,8 @@ h2 {
 }
 .filter_by {
   width: auto;
-  margin: 5px;
+  height: 10px;
+  margin: 0px;
 }
 
 
@@ -488,7 +489,13 @@ h2 {
 .divSpecies,
 .divStatus,
 .divGender{
-  margin: 1px;
+  margin-top: 0%;
+  margin-bottom: 0px;
+}
+.filter_by{
+  height: 150px;
+  flex-direction: column;
+  margin: 2px;
 }
 .button_alphabet {
   width: 10px;
