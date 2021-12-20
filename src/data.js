@@ -10,7 +10,7 @@ export const filterDataByOrigin = (data, value) => data.filter(person => person.
 export function compareStrings(a, b) {
   a = a.toLowerCase();
   b = b.toLowerCase();
-
+//operador ternario
   return (a < b) ? -1 : (a > b) ? 1 : 0;
 }
 

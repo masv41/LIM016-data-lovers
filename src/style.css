@@ -255,25 +255,20 @@ h2 {
   margin-left: 8%;
   margin-top: 5%;
   border-radius: 5px;
-  padding-left: 5%;
+  padding: 10px 2px;
 }
 .nav-menu1{
   display: flex;
 }
 .nav-menu1 label {
   background: transparent;
-  margin: 15px 20px;
-  width: 150px;
-  padding: 10px;
+  width: 250px;
+  padding: 5px;
   font-family: "Indie Flower", cursive;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration-line: underline;
-}
-.labFieldset{
-  margin: 10% 5%;
-  top: 10px;
-
+  margin: 85px 10px;
 }
 .nav-menu1 select {
   background: transparent;
@@ -305,11 +300,12 @@ h2 {
   display: flex;
 }
 .button_alphabet {
-  width: 30%;
+  width: 50px;
   margin-top: 10%;
-  padding: 0%;
+  padding: 2px;
 }
 .filter_by {
+  width: auto;
   margin: 5px;
 }
 
@@ -364,7 +360,7 @@ h2 {
 }
 
 /* ******* responsive ********/
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   /* ******* todas las paginas ******* */
   .header {
     padding: 0%;
@@ -487,12 +483,17 @@ h2 {
 }
 /* Filter Menu*/
 .nav-menu1{
-  display: block;
+  flex-direction: column;
+}
+.divSpecies,
+.divStatus,
+.divGender{
+  margin: 1px;
 }
 .button_alphabet {
-  width: 15%;
-  margin-top: 0%;
-  margin-right: 0%;
+  width: 10px;
+  margin-top: 10%;
+  padding: 2px;
 }
 
 /* Character Container*/
@@ -503,16 +504,16 @@ h2 {
   width: 28%;
 }
 .name p {
-  font-size: 18px;
+  font-size: 15px;
   padding: 0%;
 }
 .info p {
-  font-size: 18px;
+  font-size: 12px;
 }
 
 
   /* ******* Grafics ******* */
-  .columns {
+  .td {
     background: #77e4d4;
     margin: 8% 5% 1% 8%;
     padding: 10px;
@@ -623,7 +624,7 @@ h2 {
   display: flex;
 }
 .button_alphabet {
-  width: 45%;
+  width: 50px;
   margin-top: 10%;
 }
 .filter_by {
